@@ -26,6 +26,7 @@ Por otro lado, al recibir la segunda señal de entrada, el robot se desplaza hac
 
 Este enfoque meticulosamente diseñado y programado demuestra la versatilidad y precisión del robot ABB IBR 140 en la gestión de entradas y salidas digitales, brindando una solución eficiente para una variedad de aplicaciones en el campo de la robótica industrial. El video a continuación ilustra de manera visual y efectiva todo el proceso descrito anteriormente.
 
+https://github.com/Theyloramaya/Robotica-entradas-salidas/assets/144027596/34c959bb-97a8-45c0-b79b-f2873ff75400
 
 
 
