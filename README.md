@@ -49,3 +49,5 @@ A continuación, presentamos una representación gráfica de la rutina de movimi
 Posición de Mantenimiento
 Para brindar una descripción detallada de la posición de mantenimiento del robot, proporcionamos la siguiente imagen que ofrece una representación gráfica de esta posición específica. Esta posición es fundamental para cualquier tarea de mantenimiento, ajuste o servicio que pueda ser necesario llevar a cabo en el robot ABB IBR 140.
 
+
+
