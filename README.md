@@ -59,6 +59,7 @@ La estructura fundamental de este código se basa en una estructura de control i
 
 Este enfoque de programación proporciona una lógica eficaz para el control del robot ABB IBR 140, ya que garantiza que las acciones se realicen de manera precisa y en respuesta directa a las señales de entrada proporcionadas. De esta manera, el robot opera de manera autónoma y reacciona de acuerdo con las condiciones y comandos predefinidos, lo que brinda una mayor versatilidad y control sobre sus operaciones en entornos industriales.
 
-
-[rapid wot.txt](https://github.com/Theyloramaya/Robotica-entradas-salidas/files/12775899/rapid.wot.txt)
-
+```python
+def hello_world():
+print("Hello, world!")
+```
