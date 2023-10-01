@@ -28,6 +28,24 @@ Este enfoque meticulosamente diseñado y programado demuestra la versatilidad y 
 
 https://github.com/Theyloramaya/Robotica-entradas-salidas/assets/144027596/34c959bb-97a8-45c0-b79b-f2873ff75400
 
+Entradas Digitales
+Como se mencionó previamente, el controlador del Robot ABB IBR 140 (IRC5) cuenta con dos entradas digitales esenciales para el funcionamiento de nuestra solución. La primera de estas entradas desencadena una rutina específica de dibujo, al mismo tiempo que activa un indicador luminoso (LED). Tras la finalización de la rutina, el robot regresa a su posición inicial. Por otro lado, la segunda entrada tiene la tarea de dirigir el robot a una posición óptima para llevar a cabo un cambio de herramienta, y luego lo guía nuevamente a la posición de "home".
 
 
+Salidas Digitales
+En cuanto a las salidas, el LED mencionado anteriormente representa una de las salidas digitales clave en nuestro sistema. Este LED se mantiene encendido cuando se activa la primera entrada y se apaga automáticamente cuando se acciona la segunda entrada.
+
+Posición de "Home"
+La posición de "home" en nuestro contexto es la ubicación predeterminada proporcionada por el fabricante del robot. Sin embargo, es importante destacar que esta posición puede incluir un ajuste de offset en la articulación 2, lo que garantiza una configuración precisa y eficiente para nuestras operaciones.
+
+![image](https://github.com/Theyloramaya/Robotica-entradas-salidas/assets/144027596/08755ad3-dd26-43e3-9126-31733109e66a)
+
+Ejecución de la Rutina
+A continuación, presentamos una representación gráfica de la rutina de movimiento que el robot realiza en respuesta a las señales de entrada mencionadas anteriormente. Esta figura ilustra de manera visual cómo el robot se mueve desde la posición de "home" hasta la ejecución de la rutina de dibujo, y finalmente regresa a la posición de "home".
+
+![WhatsApp Video 2023-09-30 at 7 09 54 PM](https://github.com/Theyloramaya/Robotica-entradas-salidas/assets/144027596/9ca42c24-f9a5-471b-86d8-282b243ec883)
+
+
+Posición de Mantenimiento
+Para brindar una descripción detallada de la posición de mantenimiento del robot, proporcionamos la siguiente imagen que ofrece una representación gráfica de esta posición específica. Esta posición es fundamental para cualquier tarea de mantenimiento, ajuste o servicio que pueda ser necesario llevar a cabo en el robot ABB IBR 140.
 
