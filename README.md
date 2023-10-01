@@ -59,7 +59,68 @@ La estructura fundamental de este código se basa en una estructura de control i
 
 Este enfoque de programación proporciona una lógica eficaz para el control del robot ABB IBR 140, ya que garantiza que las acciones se realicen de manera precisa y en respuesta directa a las señales de entrada proporcionadas. De esta manera, el robot opera de manera autónoma y reacciona de acuerdo con las condiciones y comandos predefinidos, lo que brinda una mayor versatilidad y control sobre sus operaciones en entornos industriales.
 
-```python
-def hello_world():
-print("Hello, world!")
+```    PROC main()
+        Path_inicial;
+    	WaitTime 1;
+        IF DI_01 = 1 THEN
+            SetDO DO_01,1;
+            Path_tdibujo;
+            Path_dibujo;
+            Path_tdibujo;
+            Path_inicial;
+        ELSEIF DI_02 = 1 THEN
+            Path_changeTool;
+            SetDO DO_01,0;
+            WaitDI DI_02,1;
+            Path_setTool;
+        ELSE
+            Path_inicial;
+        ENDIF
+    ENDPROC
+    PROC Path_dibujo()
+        MoveL Target_20,v200,z5,ToolMarker\WObj:=W_Board;
+        MoveL Target_30,v200,z5,ToolMarker\WObj:=W_Board;
+        MoveL Target_40,v200,z5,ToolMarker\WObj:=W_Board;
+        MoveL Target_50,v200,z5,ToolMarker\WObj:=W_Board;
+        MoveL Target_60,v200,z5,ToolMarker\WObj:=W_Board;
+        MoveL Target_70,v200,z5,ToolMarker\WObj:=W_Board;
+        MoveL Target_80,v200,z5,ToolMarker\WObj:=W_Board;
+        MoveL Target_90,v200,z5,ToolMarker\WObj:=W_Board;
+        MoveL Target_100,v200,z5,ToolMarker\WObj:=W_Board;
+        MoveL Target_110,v200,z5,ToolMarker\WObj:=W_Board;
+        MoveL Target_120,v200,z5,ToolMarker\WObj:=W_Board;
+        MoveL Target_130,v200,z5,ToolMarker\WObj:=W_Board;
+        MoveL Target_140,v200,z5,ToolMarker\WObj:=W_Board;
+        MoveL Target_150,v200,z5,ToolMarker\WObj:=W_Board;
+        MoveL Target_160,v200,z5,ToolMarker\WObj:=W_Board;
+        MoveL Target_170,v200,z5,ToolMarker\WObj:=W_Board;
+        MoveL Target_180,v200,z5,ToolMarker\WObj:=W_Board;
+        MoveL Target_190,v200,z5,ToolMarker\WObj:=W_Board;
+        MoveL Target_200,v200,z5,ToolMarker\WObj:=W_Board;
+        MoveL Target_210,v200,z5,ToolMarker\WObj:=W_Board;
+        MoveL Target_220,v200,z5,ToolMarker\WObj:=W_Board;
+        MoveL Target_230,v200,z5,ToolMarker\WObj:=W_Board;
+        MoveL Target_240,v200,z5,ToolMarker\WObj:=W_Board;
+        MoveL Target_250,v200,z5,ToolMarker\WObj:=W_Board;
+        MoveL Target_260,v200,z5,ToolMarker\WObj:=W_Board;
+        MoveL Target_270,v200,z5,ToolMarker\WObj:=W_Board;
+        MoveL Target_280,v200,z5,ToolMarker\WObj:=W_Board;
+    ENDPROC
+    PROC Path_inicial()
+        MoveJ Target_10,v400,z100,ToolMarker\WObj:=wobj0;
+    ENDPROC
+    PROC Path_tdibujo()
+        MoveL Target_290,v400,z100,ToolMarker\WObj:=wobj0;
+    ENDPROC
+    PROC Path_setTool()
+        MoveL Target_300,v1000,z100,ToolMarker\WObj:=wobj0;
+        MoveL Target_310,v1000,z100,ToolMarker\WObj:=wobj0;
+        MoveL Target_10,v1000,z100,ToolMarker\WObj:=wobj0;
+    ENDPROC
+    PROC Path_changeTool()
+        MoveL Target_10,v1000,z100,ToolMarker\WObj:=wobj0;
+        MoveL Target_310,v1000,z100,ToolMarker\WObj:=wobj0;
+        MoveL Target_300,v1000,z100,ToolMarker\WObj:=wobj0;
+    ENDPROC
+ENDMODULE
 ```
