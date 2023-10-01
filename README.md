@@ -53,5 +53,12 @@ Para brindar una descripción detallada de la posición de mantenimiento del rob
 ![WhatsApp Video 2023-09-30 at 7 27 25 PM (4)](https://github.com/Theyloramaya/Robotica-entradas-salidas/assets/144027596/b45c9309-e423-4427-945c-e8e57b9c4c43)
 
 
+En esta sección, se expone el código implementado en el lenguaje RAPID para llevar a cabo las operaciones y rutinas específicas de este laboratorio de robótica. Es importante destacar que tanto las entradas como las salidas digitales han sido configuradas y ajustadas directamente desde el flexpendant, y se han asignado a los modelos previamente mencionados en nuestra solución.
 
+La estructura fundamental de este código se basa en una estructura de control if/else, donde la expresión condicional está definida por las señales de entrada. Esto significa que las rutinas programadas solo se ejecutarán cuando estas señales sean activadas o desactivadas según sea necesario.
+
+Este enfoque de programación proporciona una lógica eficaz para el control del robot ABB IBR 140, ya que garantiza que las acciones se realicen de manera precisa y en respuesta directa a las señales de entrada proporcionadas. De esta manera, el robot opera de manera autónoma y reacciona de acuerdo con las condiciones y comandos predefinidos, lo que brinda una mayor versatilidad y control sobre sus operaciones en entornos industriales.
+
+
+[rapid wot.txt](https://github.com/Theyloramaya/Robotica-entradas-salidas/files/12775899/rapid.wot.txt)
 
