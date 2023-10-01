@@ -31,9 +31,10 @@ https://github.com/Theyloramaya/Robotica-entradas-salidas/assets/144027596/34c95
 Entradas Digitales
 Como se mencionó previamente, el controlador del Robot ABB IBR 140 (IRC5) cuenta con dos entradas digitales esenciales para el funcionamiento de nuestra solución. La primera de estas entradas desencadena una rutina específica de dibujo, al mismo tiempo que activa un indicador luminoso (LED). Tras la finalización de la rutina, el robot regresa a su posición inicial. Por otro lado, la segunda entrada tiene la tarea de dirigir el robot a una posición óptima para llevar a cabo un cambio de herramienta, y luego lo guía nuevamente a la posición de "home".
 
-
 Salidas Digitales
 En cuanto a las salidas, el LED mencionado anteriormente representa una de las salidas digitales clave en nuestro sistema. Este LED se mantiene encendido cuando se activa la primera entrada y se apaga automáticamente cuando se acciona la segunda entrada.
+![image](https://github.com/Theyloramaya/Robotica-entradas-salidas/assets/144027596/e53ffa8e-7683-4a1c-9b16-94277a0f2ef9)
+
 
 Posición de "Home"
 La posición de "home" en nuestro contexto es la ubicación predeterminada proporcionada por el fabricante del robot. Sin embargo, es importante destacar que esta posición puede incluir un ajuste de offset en la articulación 2, lo que garantiza una configuración precisa y eficiente para nuestras operaciones.
@@ -48,6 +49,9 @@ A continuación, presentamos una representación gráfica de la rutina de movimi
 
 Posición de Mantenimiento
 Para brindar una descripción detallada de la posición de mantenimiento del robot, proporcionamos la siguiente imagen que ofrece una representación gráfica de esta posición específica. Esta posición es fundamental para cualquier tarea de mantenimiento, ajuste o servicio que pueda ser necesario llevar a cabo en el robot ABB IBR 140.
+
+![WhatsApp Video 2023-09-30 at 7 27 25 PM (4)](https://github.com/Theyloramaya/Robotica-entradas-salidas/assets/144027596/b45c9309-e423-4427-945c-e8e57b9c4c43)
+
 
 
 
