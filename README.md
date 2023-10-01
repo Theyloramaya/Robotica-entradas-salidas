@@ -1,5 +1,5 @@
 # Robotica-entradas-salidas
-Desarrollado por Theylor Andres Amaya Villabon y  Juan Pablo Ortiz Mendoza
+Desarrollado por Theylor Andres Amaya Villabon y Juan Pablo Ortiz Mendoza
 
 
 En el presente repositorio, se encuentra el desarrollo del laboratorio 2 de robótica enfocado en la gestión de entradas y salidas para el robot ABB IBR 140. Este trabajo se centra en la programación avanzada en el lenguaje RAPID y la utilización del módulo de entradas y salidas digitales integrado en el controlador IRC5.
@@ -28,30 +28,31 @@ Este enfoque meticulosamente diseñado y programado demuestra la versatilidad y 
 
 https://github.com/Theyloramaya/Robotica-entradas-salidas/assets/144027596/34c959bb-97a8-45c0-b79b-f2873ff75400
 
-Entradas Digitales
+# Entradas Digitales
 Como se mencionó previamente, el controlador del Robot ABB IBR 140 (IRC5) cuenta con dos entradas digitales esenciales para el funcionamiento de nuestra solución. La primera de estas entradas desencadena una rutina específica de dibujo, al mismo tiempo que activa un indicador luminoso (LED). Tras la finalización de la rutina, el robot regresa a su posición inicial. Por otro lado, la segunda entrada tiene la tarea de dirigir el robot a una posición óptima para llevar a cabo un cambio de herramienta, y luego lo guía nuevamente a la posición de "home".
 
-Salidas Digitales
+# Salidas Digitales
 En cuanto a las salidas, el LED mencionado anteriormente representa una de las salidas digitales clave en nuestro sistema. Este LED se mantiene encendido cuando se activa la primera entrada y se apaga automáticamente cuando se acciona la segunda entrada.
 ![image](https://github.com/Theyloramaya/Robotica-entradas-salidas/assets/144027596/e53ffa8e-7683-4a1c-9b16-94277a0f2ef9)
 
 
-Posición de "Home"
+# Posición de "Home"
 La posición de "home" en nuestro contexto es la ubicación predeterminada proporcionada por el fabricante del robot. Sin embargo, es importante destacar que esta posición puede incluir un ajuste de offset en la articulación 2, lo que garantiza una configuración precisa y eficiente para nuestras operaciones.
 
 ![image](https://github.com/Theyloramaya/Robotica-entradas-salidas/assets/144027596/08755ad3-dd26-43e3-9126-31733109e66a)
 
-Ejecución de la Rutina
+# Ejecución de la Rutina
 A continuación, presentamos una representación gráfica de la rutina de movimiento que el robot realiza en respuesta a las señales de entrada mencionadas anteriormente. Esta figura ilustra de manera visual cómo el robot se mueve desde la posición de "home" hasta la ejecución de la rutina de dibujo, y finalmente regresa a la posición de "home".
 
 ![WhatsApp Video 2023-09-30 at 7 09 54 PM](https://github.com/Theyloramaya/Robotica-entradas-salidas/assets/144027596/9ca42c24-f9a5-471b-86d8-282b243ec883)
 
 
-Posición de Mantenimiento
+# Posición de Mantenimiento
 Para brindar una descripción detallada de la posición de mantenimiento del robot, proporcionamos la siguiente imagen que ofrece una representación gráfica de esta posición específica. Esta posición es fundamental para cualquier tarea de mantenimiento, ajuste o servicio que pueda ser necesario llevar a cabo en el robot ABB IBR 140.
 
 ![WhatsApp Video 2023-09-30 at 7 27 25 PM (4)](https://github.com/Theyloramaya/Robotica-entradas-salidas/assets/144027596/b45c9309-e423-4427-945c-e8e57b9c4c43)
 
+# Codigo RAPID para entradas y salidas
 
 En esta sección, se expone el código implementado en el lenguaje RAPID para llevar a cabo las operaciones y rutinas específicas de este laboratorio de robótica. Es importante destacar que tanto las entradas como las salidas digitales han sido configuradas y ajustadas directamente desde el flexpendant, y se han asignado a los modelos previamente mencionados en nuestra solución.
 
@@ -124,3 +125,10 @@ Este enfoque de programación proporciona una lógica eficaz para el control del
     ENDPROC
 ENDMODULE
 ```
+# Conclusiones 
+
+Integración de Entradas y Salidas Digitales: El laboratorio demostró la importancia de integrar entradas y salidas digitales en el control de un robot industrial como el ABB IBR 140. Estas entradas y salidas digitales permiten que el robot interactúe con su entorno y realice acciones específicas en respuesta a señales externas.
+
+Programación Intermedia en RAPID: Durante el laboratorio, se utilizó el lenguaje de programación RAPID para controlar las acciones del robot. Se destacó la capacidad de programar estructuras de control como if/else para tomar decisiones basadas en las señales de entrada, lo que aumenta la versatilidad y el control del robot.
+
+Aplicaciones en Robótica Industrial: Este laboratorio ilustró cómo se pueden utilizar las entradas y salidas digitales en un contexto de robótica industrial. Las aplicaciones son diversas, desde el control de herramientas y dispositivos hasta la ejecución de tareas específicas en la línea de producción. Esto subraya la importancia de comprender cómo configurar y utilizar estas funciones en entornos industriales automatizados.
